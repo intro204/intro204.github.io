@@ -1,174 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chummies by Grace — Home Baked, Made with Chum</title>
-<meta name="description" content="Cinnamon rolls, banana bread, muffins and Basque burnt cheesecake, baked fresh by Grace.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chummies by Grace</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
 </head>
+
 <body>
 
-<header class="site-header">
-  <div class="wrap header-inner">
-    <img src="images/chummies-logo.jpg" alt="Chummies by Grace" class="logo">
-    <nav class="nav">
-      <a href="#menu">Menu</a>
-      <a href="#about">About</a>
-      <a href="#order">Order</a>
-    </nav>
-  </div>
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">
+        <img src="images/logo.png" alt="Chummies by Grace">
+        </div>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+        <div class="cart-button" id="cart-button">
+
+🛒 Cart
+
+<span id="cart-count">0</span>
+
+</div>
+
+    </div>
+
+</nav>
+
 </header>
 
-<section class="hero">
-  <div class="wrap hero-inner">
-    <p class="eyebrow">A home bakery, box by box</p>
-    <h1>Baked warm. Boxed with care.<br>Shared with your chummies.</h1>
-    <p class="hero-sub">Cinnamon rolls, banana bread, muffins, and Basque burnt cheesecake — made fresh to order.</p>
-    <a href="#order" class="btn">See how to order</a>
-  </div>
-  <div class="swoosh" aria-hidden="true">
-    <svg viewBox="0 0 600 40" preserveAspectRatio="none">
-      <path d="M0,20 C150,45 450,-5 600,20" stroke="#8A5A34" stroke-width="3" fill="none" stroke-linecap="round"/>
-    </svg>
-  </div>
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+<div class="container hero-content">
+
+<div class="hero-text">
+
+<p class="small-title">
+
+Warm • Fresh • Homemade
+
+</p>
+
+<h1>
+
+Freshly Baked Happiness
+Delivered to Your Door
+
+</h1>
+
+<p>
+
+Every loaf, muffin and pastry is baked in small batches
+using quality ingredients and lots of love.
+
+</p>
+
+<a href="#menu" class="primary-btn">
+
+Browse Menu
+
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="images/hero.jpg">
+
+</div>
+
+</div>
+
 </section>
 
-<section class="menu" id="menu">
-  <div class="wrap">
-    <p class="eyebrow center">What's in the box</p>
-    <h2 class="center">The Line-Up</h2>
-    <div class="menu-grid">
+<!-- ================= PREORDER ================= -->
 
-      <article class="menu-card" data-item="Cinnamon Rolls">
-        <div class="menu-icon">🍥</div>
-        <h3>Cinnamon Rolls</h3>
-        <p>Soft, pillowy dough rolled with cinnamon-brown sugar filling and finished with a sweet glaze.</p>
-        <div class="stepper">
-          <button type="button" class="step-btn minus" aria-label="Remove one">–</button>
-          <span class="step-count">0</span>
-          <button type="button" class="step-btn plus" aria-label="Add one">+</button>
-        </div>
-      </article>
+<section class="preorder">
 
-      <article class="menu-card" data-item="Banana Bread">
-        <div class="menu-icon">🍌</div>
-        <h3>Banana Bread</h3>
-        <p>Moist, rich loaves made with real ripe bananas — a comforting classic done right.</p>
-        <div class="stepper">
-          <button type="button" class="step-btn minus" aria-label="Remove one">–</button>
-          <span class="step-count">0</span>
-          <button type="button" class="step-btn plus" aria-label="Add one">+</button>
-        </div>
-      </article>
+<div class="container">
 
-      <article class="menu-card" data-item="Muffins">
-        <div class="menu-icon">🧁</div>
-        <h3>Muffins</h3>
-        <p>Tender, bakery-style muffins baked fresh in small batches. Ask about current flavors.</p>
-        <div class="stepper">
-          <button type="button" class="step-btn minus" aria-label="Remove one">–</button>
-          <span class="step-count">0</span>
-          <button type="button" class="step-btn plus" aria-label="Add one">+</button>
-        </div>
-      </article>
+<h2>Pre-Order Schedule</h2>
 
-      <article class="menu-card" data-item="Basque Burnt Cheesecake">
-        <div class="menu-icon">🍰</div>
-        <h3>Basque Burnt Cheesecake</h3>
-        <p>Caramelized on top, creamy in the middle — the crustless classic done the Chummies way.</p>
-        <div class="stepper">
-          <button type="button" class="step-btn minus" aria-label="Remove one">–</button>
-          <span class="step-count">0</span>
-          <button type="button" class="step-btn plus" aria-label="Add one">+</button>
-        </div>
-      </article>
+<div class="schedule">
 
-    </div>
-    <p class="menu-hint">Tap <strong>+</strong> on anything you'd like, then scroll down to send your order.</p>
-  </div>
+<div class="schedule-card">
+
+<h3>Wednesday Delivery</h3>
+
+<p>
+
+Order before
+
+<strong>Tuesday • 6:00 PM</strong>
+
+</p>
+
+</div>
+
+<div class="schedule-card">
+
+<h3>Saturday Delivery</h3>
+
+<p>
+
+Order before
+
+<strong>Friday • 6:00 PM</strong>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<section class="about" id="about">
-  <div class="wrap about-inner">
-    <div class="about-text">
-      <p class="eyebrow">The story so far</p>
-      <h2>Made by Grace, for good company</h2>
-      <p>Chummies started in a home kitchen with one simple idea: good food is better shared. Every order is baked fresh, in small batches, with the same care you'd give something made for a friend. That's where the name comes from — everything here is made for your chummies.</p>
-    </div>
-  </div>
+<!-- ================= MENU ================= -->
+
+<section id="menu">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Our Best Sellers
+
+</h2>
+
+<div class="products" id="product-list">
+
+</div>
+</div>
+
 </section>
 
-<section class="order" id="order">
-  <div class="wrap order-inner">
-    <p class="eyebrow center">Ready to order?</p>
-    <h2 class="center">Let's Get You a Box</h2>
-    <p class="center order-sub">Fill out the form below to place your order — orders are baked fresh for pickup or delivery every <strong>Wednesday</strong> and <strong>Saturday</strong>.</p>
+<!-- ================= CONTACT ================= -->
 
-    <div class="contact-card">
-      <p><strong>Message us on:</strong> facebook.com/chummies</p>
-      <p><strong>Or call/text:</strong> 0912 123 4567</p>
-      <p><strong>Pickup:</strong> Sta. Maria</p>
-      <p><strong>Delivery:</strong> via Lalamove</p>
-      <p><strong>Order days:</strong> Wednesday &amp; Saturday only</p>
-    </div>
+<section id="contact">
 
-    <form class="order-form" id="orderForm">
-      <div class="order-summary" id="orderSummary">
-        <p class="placeholder">No items yet — tap + on your favorites above.</p>
-      </div>
+<div class="container contact">
 
-      <div class="form-row">
-        <label for="custName">Name</label>
-        <input type="text" id="custName" name="Name" required>
-      </div>
+<h2>
 
-      <div class="form-row">
-        <label for="custContact">Contact number</label>
-        <input type="tel" id="custContact" name="Contact" required>
-      </div>
+Order Information
 
-      <div class="form-row">
-        <label>Pickup or delivery?</label>
-        <div class="radio-group">
-          <label class="radio-option"><input type="radio" name="Fulfillment" value="Pickup (Sta. Maria)" checked> Pickup (Sta. Maria)</label>
-          <label class="radio-option"><input type="radio" name="Fulfillment" value="Delivery (Lalamove)"> Delivery (Lalamove)</label>
-        </div>
-      </div>
+</h2>
 
-      <div class="form-row" id="addressRow" style="display:none;">
-        <label for="custAddress">Delivery address</label>
-        <input type="text" id="custAddress" name="Address">
-      </div>
+<div class="contact-grid">
 
-      <div class="form-row">
-        <label>Order day</label>
-        <div class="radio-group">
-          <label class="radio-option"><input type="radio" name="OrderDay" value="Wednesday" checked> Wednesday</label>
-          <label class="radio-option"><input type="radio" name="OrderDay" value="Saturday"> Saturday</label>
-        </div>
-      </div>
+<div>
 
-      <button type="submit" class="btn" id="submitBtn">Send order</button>
-      <p class="form-status" id="formStatus"></p>
-    </form>
-  </div>
+<h3>Payment</h3>
+
+<p>
+
+GCash
+
+<br>
+
+Bank Transfer
+
+</p>
+
+</div>
+
+<div>
+
+<h3>Delivery</h3>
+
+<p>
+
+Lalamove
+
+<br>
+
+Pickup Available
+
+</p>
+
+</div>
+
+<div>
+
+<h3>Schedule</h3>
+
+<p>
+
+Wednesday
+
+<br>
+
+Saturday
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <img src="images/chummies-logo.jpg" alt="Chummies by Grace" class="footer-logo">
-    <p>&copy; <span id="year"></span> Chummies by Grace. All rights reserved.</p>
-  </div>
+<footer>
+
+<div class="container">
+
+<p>
+
+© 2026 Chummies by Grace
+
+</p>
+
+</div>
+
 </footer>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-<script src="script.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/app.js"></script>
 
 </body>
+
 </html>
